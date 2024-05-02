@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jane Austen's Quotes</title>
+    <style>
+      body {
+        background: linear-gradient(
+          181deg,
+          rgb(2, 0, 97) 15%,
+          rgb(97, 149, 219) 158.5%
+        );
+
+        margin: 15px 20%;
+        border: 10px solid #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-size: 70px;
+        color: #304b66;
+        margin: 5px 0px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      h2 {
+        font-family: Garamond, serif;
+        font-size: 30px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
+        border: 2px outset #304b66;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 25px 110px;
+        background-color: rgba(85, 133, 181, 0.4);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        width: 40%;
+        border-radius: 30px 50%;
+      }
+      li {
+        list-style-type: circle;
+        font-style: italic;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: #000;
+      }
+      a:visited {
+        color: rgb(2, 0, 97);
+      }
+      button {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: bolder;
+        display: block;
+        margin: 35px auto;
+        padding: 20px;
+        border: 1px solid #5585b5;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 15px;
+        color: #bbe4e9;
+        background-color: #5585b5;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background-color: rgba(85, 133, 181, 0.4);
+        color: #3b5c7d;
+      }
+      .wholePage {
+        background-color: #bbe4e9;
+        padding: 20px;
+      }
+      .wholeText {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 1.4;
+        margin: 25px 110px;
+      }
+      .linkText:hover {
+        text-decoration: underline;
+      }
+      .coder {
+        text-align: center;
+        font-family: monospace;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wholePage">
+      <h1>⁓ Jane Austen ⁓</h1>
+      <h2>DISCOVER HER MOST FAMOUS QUOTES</h2>
+      <img
+        src="https://www.biografiasyvidas.com/biografia/a/fotos/austen_jane.jpg"
+        alt="Jane Austen portrait"
+      />
+      <div class="wholeText">
+        <p class="biography">
+          <strong>Jane Austen</strong> (1775-1817) was an English novelist known
+          for her six major novels, which implicitly interpret, critique, and
+          comment upon the British landed gentry at the end of the 18th century.
+          Austen's plots often explore the dependence of women on marriage for
+          the pursuit of favourable social standing and economic security. Her
+          works are an implicit critique of the novels of sensibility of the
+          second half of the 18th century and are part of the transition to
+          19th-century literary realism. <br />
+          <br />
+          Despite of writing only six complete novels, Austen achieved worldwide
+          fame and currently is one of the most influential authors of universal
+          literature. Her most important novels are:
+        </p>
+        <ul>
+          <li>Sense and Sensibility</li>
+          <li>Pride and Prejudice</li>
+          <li>Mansfield Park</li>
+          <li>Emma</li>
+          <li>Northanger Abbey</li>
+          <li>Persuasion</li>
+        </ul>
+        <a href="https://en.wikipedia.org/wiki/Jane_Austen" target="_blank"
+          >🔍
+          <span class="linkText">Learn more about Jane and her works</span></a
+        >
+      </div>
+      <button>Find today's quote</button>
+      <hr />
+      <p class="coder">
+        This page was coded by
+        <a href="https://www.linkedin.com/in/edurnesaenzmoral/" target="_blank"
+          ><em>Edurne Sáenz</em></a
+        >
+        using HTML, CSS and JavaScript
+      </p>
+    </div>
+    <script>
+      function findQuote() {
+        let name = prompt("What is your name?");
+        let favouriteNovel = prompt("What is your favourite Jane's novel?");
+
+        favouriteNovelLower = favouriteNovel.toLowerCase();
+
+        if (favouriteNovelLower === "sense and sensibility") {
+          alert(`Hi ${name}! 👋🏼 We hope you enjoy this quote from 📖 ${favouriteNovel} ✍🏼 \n
+            "I wish, as well as everybody else, to be perfectly happy; but, like everybody else, it must be in my own way."`);
+        } else {
+          if (favouriteNovelLower === "pride and prejudice") {
+            alert(`Hi ${name}! 👋🏼 We hope you enjoy this quote from 📖 ${favouriteNovel} ✍🏼 \n
+            "Vanity and pride are different things, though the words are often used synonymously. A person may be proud without being vain. Pride relates more to our opinion of ourselves, vanity to what we would have others think of us."`);
+          } else {
+            if (favouriteNovelLower === "mansfield park") {
+              alert(`Hi ${name}! 👋🏼 We hope you enjoy this quote from 📖 ${favouriteNovel} ✍🏼 \n
+            "Every moment has its pleasures and its hope."`);
+            } else {
+              if (favouriteNovelLower === "emma") {
+                alert(`Hi ${name}! 👋🏼 We hope you enjoy this quote from 📖 ${favouriteNovel} ✍🏼 \n
+            "I have observed … in the course of my life, that if things are going outwardly one month, they are sure to mend the next."`);
+              } else {
+                if (favouriteNovelLower === "northanger abbey") {
+                  alert(`Hi ${name}! 👋🏼 We hope you enjoy this quote from 📖 ${favouriteNovel} ✍🏼 \n
+          "There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves, it is not my nature."`);
+                } else {
+                  if (favouriteNovelLower === "persuasion") {
+                    alert(`Hi ${name}! 👋🏼 We hope you enjoy this quote from 📖 ${favouriteNovel} ✍🏼 \n
+          "I hate to hear you talk about all women as if they were fine ladies instead of rational creatures. None of us want to be in calm waters all our lives."`);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      let quoteButton = document.querySelector("button");
+
+      quoteButton.addEventListener("click", findQuote);
+    </script>
+  </body>
+</html>

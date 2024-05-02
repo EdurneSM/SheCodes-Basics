@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework Week 1</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #1a64d6;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        margin: 0 auto;
+      }
+      h2 {
+        text-align: center;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        margin: 5px auto;
+      }
+      ul {
+        padding: 0;
+      }
+      li {
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 400px;
+        height: 100px;
+        margin: 0 auto;
+        padding: 10px 0;
+        border: 0px solid #fffbef;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+      li:hover {
+        background-color: #fffbef;
+      }
+      .degrees {
+        font-family: monospace;
+        font-size: 18px;
+        color: #75736e;
+      }
+      .max {
+        font-weight: bold;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 20px 30px;
+        color: #fff;
+        font-size: 16px;
+        background-color: #1a64d6;
+        border-radius: 30px;
+        border: 1px solid #1a64d6;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        color: #1a64d6;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      .creator {
+        text-align: center;
+        font-family: monospace;
+        font-size: 18px;
+        color: #75736e;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>⛅<br />Currently 21º in Tokyo</h1>
+    <h2>13º / <span class="max">23º</span></h2>
+    <ul>
+      <li>
+        <h3>🌧 Tomorrow</h3>
+        <div class="degrees">10º / <span class="max">22º</span></div>
+      </li>
+      <li>
+        <h3>🌥 Saturday</h3>
+        <div class="degrees">15º / <span class="max">17º</span></div>
+      </li>
+      <li>
+        <h3>☀ Sunday</h3>
+        <div class="degrees">25º / <span class="max">28º</span></div>
+      </li>
+    </ul>
+    <button>Change city</button>
+    <div class="creator">Coded by Edurne Sáenz</div>
+  </body>
+</html>
